@@ -1,0 +1,6 @@
+[submodule "vendor/rvm.el"]
+	path = vendor/rvm.el
+	url = http://github.com/senny/rvm.el.git
+[submodule "vendor/yasnippets-rails"]
+	path = vendor/yasnippets-rails
+	url = http://github.com/eschulte/yasnippets-rails.git
