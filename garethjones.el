@@ -1,3 +1,6 @@
+;; set the default frame size
+(set-frame-size (selected-frame) 160 50)
+
 ;; dir to store all extra extensions
 (setq vendor-dir (concat dotfiles-dir "/vendor"))
 
@@ -24,4 +27,6 @@
 (yas/load-directory (concat vendor-dir "/yasnippet-0.6.1c/snippets"))
 (yas/load-directory (concat vendor-dir "/yasnippets-rails/rails-snippets"))
 
+;; ack
+(require 'ack)
 
