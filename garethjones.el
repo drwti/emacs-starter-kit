@@ -13,5 +13,6 @@
 (load "garethjones/rvm")
 (load "garethjones/ack")
 (load "garethjones/yasnippets")
+(load "garethjones/haml")
 
 
