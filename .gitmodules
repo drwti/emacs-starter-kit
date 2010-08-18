@@ -4,3 +4,6 @@
 [submodule "vendor/yasnippets-rails"]
 	path = vendor/yasnippets-rails
 	url = http://github.com/eschulte/yasnippets-rails.git
+[submodule "vendor/textmate"]
+	path = vendor/textmate
+	url = git://github.com/defunkt/textmate.el.git
