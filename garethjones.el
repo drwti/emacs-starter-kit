@@ -12,5 +12,4 @@
 (load "garethjones/yasnippets")
 (load "garethjones/haml")
 (load "garethjones/textmate")
-
-
+(load "garethjones/linum")
