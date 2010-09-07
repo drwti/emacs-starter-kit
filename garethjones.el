@@ -1,6 +1,3 @@
-;; set the default frame size
-(set-frame-size (selected-frame) 160 50)
-
 ;; dir to store all extra extensions
 (setq vendor-dir (concat dotfiles-dir "/vendor"))
 
@@ -15,4 +12,5 @@
 (load "garethjones/yasnippets")
 (load "garethjones/haml")
 (load "garethjones/textmate")
+
 
