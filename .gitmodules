@@ -7,3 +7,6 @@
 [submodule "vendor/textmate"]
 	path = vendor/textmate
 	url = git://github.com/defunkt/textmate.el.git
+[submodule "vendor/elein"]
+	path = vendor/elein
+	url = http://github.com/remvee/elein.git
