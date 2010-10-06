@@ -1,7 +1,7 @@
-;; dont send command to mac-os
-(setq mac-pass-command-to-system nil)
+;; map meta to command key for mac
+(setq ns-command-modifier 'meta)
 
-(global-set-key [f7] 'toggle-fullscreen)
+(global-set-key [f7] 'ns-toggle-fullscreen)
 
 ;; steve yegges's suggested keybindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
