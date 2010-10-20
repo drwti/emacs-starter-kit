@@ -9,3 +9,6 @@
 
 (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
 (require 'color-theme-wombat)
+
+;; make option the super key on mac
+(setq mac-option-modifier 'super)

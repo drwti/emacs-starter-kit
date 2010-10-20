@@ -14,3 +14,9 @@
 (load "garethjones/textmate")
 ;;(load "garethjones/linum")
 (load "garethjones/elein")
+
+(require 'undo-tree)
+
+(color-theme-wombat)
+
+
