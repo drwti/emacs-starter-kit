@@ -1,4 +1,4 @@
-(defvar *clojure-scratch-dir* "~/sandbox/clojure/clj-scratch"
+(defvar *clojure-scratch-dir* "~/sandbox/projects/clojure/clj-scratch"
   "Location of a scratch project for quickly playing with clojure stuff")
 
 (defun scratch-clojure ()
