@@ -1,7 +1,7 @@
 ;; use inconsolata
 (set-face-attribute 'default nil
                     :family "inconsolata"
-                    :height 180)
+                    :height 160)
 
 ;; tabs are 2 spaces
 (setq-default tab-width 2)

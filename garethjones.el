@@ -17,6 +17,7 @@
 
 (require 'undo-tree)
 
-(color-theme-wombat)
+
+;;(color-theme-wombat)
 
 
