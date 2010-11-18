@@ -3,9 +3,10 @@
 
 ;; add my vendor dir to load path
 (add-to-list 'load-path vendor-dir)
-(add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
 
-(require 'color-theme-wombat)
+;; wombat color theme
+;; (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
+;; (require 'color-theme-wombat)
 
 ;; use inconsolata
 (set-face-attribute 'default nil
