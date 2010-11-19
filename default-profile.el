@@ -5,13 +5,14 @@
 (add-to-list 'load-path vendor-dir)
 
 ;; wombat color theme
-;; (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
-;; (require 'color-theme-wombat)
+(add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
+(require 'color-theme-wombat)
+(color-theme-wombat)
 
 ;; use inconsolata
 (set-face-attribute 'default nil
                     :family "Inconsolata"
-                    :height 160)
+                    :height 140)
 
 ;; tabs are 2 spaces
 (setq-default tab-width 2)
@@ -22,8 +23,6 @@
 
 ;; map meta to command key for mac
 (setq ns-command-modifier 'meta)
-
-(global-set-key [f7] 'ns-toggle-fullscreen)
 
 ;; steve yegges's suggested keybindings
 (global-set-key "\C-x\C-m" 'execute-extended-command)
@@ -48,6 +47,17 @@
         (elein-swank)
         (find-file (concat *clojure-scratch-dir* "/src/clj_scratch/core.clj")))
     (message "make sure you have your clj-scratch project set up sucker")))
+
+(defun toggle-fullscreen (&optional f)
+  (interactive)
+  (let ((current-value (frame-parameter nil 'fullscreen)))
+    (set-frame-parameter nil 'fullscreen
+                         (if (equal 'fullboth current-value)
+                           (if (boundp 'old-fullscreen) old-fullscreen nil)
+                           (progn (setq old-fullscreen current-value)
+                                  'fullboth)))))  
+
+(global-set-key [f7] 'toggle-fullscreen)
 
 ;; ack
 (require 'ack)
