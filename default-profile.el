@@ -90,3 +90,6 @@
 
 ;; undo-tree
 (require 'undo-tree)
+
+;; ruby
+(setq ruby-deep-indent-paren-style nil)
