@@ -13,3 +13,6 @@
 [submodule "vendor/color-theme-wombat"]
 	path = vendor/color-theme-wombat
 	url = http://github.com/demizer/color-theme-wombat.git
+[submodule "vendor/durendal"]
+	path = vendor/durendal
+	url = https://github.com/technomancy/durendal.git
