@@ -17,8 +17,9 @@
 (add-to-list 'load-path vendor-dir)
 
 ;; wombat color theme
-;; (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
-;; (require 'color-theme-wombat)
+(add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
+(require 'color-theme-wombat)
+(color-theme-wombat)
 
 ;; use inconsolata
 (set-face-attribute 'default nil
