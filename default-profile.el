@@ -9,10 +9,6 @@
 ;; dir to store all extra extensions
 (setq vendor-dir (concat dotfiles-dir "/vendor"))
 
-;; adding technomancy's package archive
-(add-to-list 'package-archives
-                 '("technomancy" . "http://repo.technomancy.us/emacs/") t)
-
 ;; add my vendor dir to load path
 (add-to-list 'load-path vendor-dir)
 
