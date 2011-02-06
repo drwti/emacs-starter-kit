@@ -18,6 +18,9 @@
                     :family "Inconsolata"
                     :height 160)
 
+;; show line numbers
+(linum-mode)
+
 ;; tabs are 2 spaces
 (setq-default tab-width 2)
 (setq-default indent-tabs-mode nil)
