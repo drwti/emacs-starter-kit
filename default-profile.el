@@ -97,6 +97,3 @@
 ;; undo-tree
 (require 'undo-tree)
 
-;; durendal
-(add-to-list 'load-path (concat vendor-dir "/durendal"))
-(require 'durendal)
