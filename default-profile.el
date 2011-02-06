@@ -6,6 +6,10 @@
 
 (if window-system (set-exec-path-from-shell-PATH))
 
+(add-to-list 'package-archives
+             '("marmalade" . 
+               "http://marmalade-repo.org/packages/") t)
+
 ;; dir to store all extra extensions
 (setq vendor-dir (concat dotfiles-dir "/vendor"))
 
