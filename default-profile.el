@@ -72,28 +72,4 @@
 (add-to-list 'load-path (concat vendor-dir "/elein"))
 (require 'elein)
 
-;; rvm
-(add-to-list 'load-path (concat vendor-dir "/rvm.el"))
-(require 'rvm)
-(rvm-use-default)
-
-;; yasnippets
-(add-to-list 'load-path (concat vendor-dir "/yasnippet-0.6.1c"))
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory (concat vendor-dir "/yasnippet-0.6.1c/snippets"))
-(yas/load-directory (concat vendor-dir "/yasnippets-rails/rails-snippets"))
-
-;; haml
-(add-to-list 'load-path (concat vendor-dir "/haml"))
-(require 'haml-mode)
-(require 'sass-mode)
-
-;; textmate
-(add-to-list 'load-path (concat vendor-dir "/textmate"))
-(require 'textmate)
-(textmate-mode)
-
-;; undo-tree
-(require 'undo-tree)
 
