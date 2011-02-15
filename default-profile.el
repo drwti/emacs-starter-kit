@@ -9,9 +9,9 @@
 ;; dir to store all extra extensions
 (setq vendor-dir (concat dotfiles-dir "/vendor"))
 
-;; adding technomancy's package archive
 (add-to-list 'package-archives
-                 '("technomancy" . "http://repo.technomancy.us/emacs/") t)
+             '("marmalade" . 
+               "http://marmalade-repo.org/packages/") t)
 
 ;; add my vendor dir to load path
 (add-to-list 'load-path vendor-dir)
@@ -59,41 +59,6 @@
 
 (global-set-key [f7] 'toggle-fullscreen)
 
-;; ack
-(require 'ack)
-
-;; elein
-(add-to-list 'load-path (concat vendor-dir "/elein"))
-(require 'elein)
-
-;; rvm
-(add-to-list 'load-path (concat vendor-dir "/rvm.el"))
-(require 'rvm)
-(rvm-use-default)
-
-;; yasnippets
-(add-to-list 'load-path (concat vendor-dir "/yasnippet-0.6.1c"))
-(require 'yasnippet)
-(yas/initialize)
-(yas/load-directory (concat vendor-dir "/yasnippet-0.6.1c/snippets"))
-(yas/load-directory (concat vendor-dir "/yasnippets-rails/rails-snippets"))
-
-;; haml
-(add-to-list 'load-path (concat vendor-dir "/haml"))
-(require 'haml-mode)
-(require 'sass-mode)
-
-;; textmate
-(add-to-list 'load-path (concat vendor-dir "/textmate"))
-(require 'textmate)
-(textmate-mode)
-
-;; undo-tree
-(require 'undo-tree)
-
 ;; ruby
 (setq ruby-deep-indent-paren-style nil)
-  
-;; durendal
-(add-to-list 'load-path (concat vendor-dir "/durendal"))
-(require 'durendal)
+
