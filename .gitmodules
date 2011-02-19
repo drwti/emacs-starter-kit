@@ -1,0 +1,3 @@
+[submodule "vendor/color-theme-wombat"]
+	path = vendor/color-theme-wombat
+	url = http://github.com/demizer/color-theme-wombat.git
