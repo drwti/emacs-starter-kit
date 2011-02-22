@@ -1,18 +1,3 @@
-[submodule "vendor/rvm.el"]
-	path = vendor/rvm.el
-	url = http://github.com/senny/rvm.el.git
-[submodule "vendor/yasnippets-rails"]
-	path = vendor/yasnippets-rails
-	url = http://github.com/eschulte/yasnippets-rails.git
-[submodule "vendor/textmate"]
-	path = vendor/textmate
-	url = git://github.com/defunkt/textmate.el.git
-[submodule "vendor/elein"]
-	path = vendor/elein
-	url = http://github.com/remvee/elein.git
 [submodule "vendor/color-theme-wombat"]
 	path = vendor/color-theme-wombat
 	url = http://github.com/demizer/color-theme-wombat.git
-[submodule "vendor/durendal"]
-	path = vendor/durendal
-	url = https://github.com/technomancy/durendal.git
