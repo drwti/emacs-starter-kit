@@ -10,11 +10,5 @@
              '("marmalade" . 
                "http://marmalade-repo.org/packages/") t)
 
-;; dir to store all extra extensions
-(setq vendor-dir (concat dotfiles-dir "/vendor"))
-
-;; add my vendor dir to load path
-(add-to-list 'load-path vendor-dir)
-
 ;; hook to redirect stdout to slime buffer
 (add-hook 'slime-connected-hook 'slime-redirect-inferior-output)
