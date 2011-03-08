@@ -68,3 +68,4 @@
 ;; ack
 (require 'ack)
 
+(add-hook 'slime-connected-hook 'slime-redirect-inferior-output)
