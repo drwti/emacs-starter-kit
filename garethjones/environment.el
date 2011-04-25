@@ -12,3 +12,6 @@
 
 ;; hook to redirect stdout to slime buffer
 (add-hook 'slime-connected-hook 'slime-redirect-inferior-output)
+
+;; smooth-scrolling stops that annoying jump when moving around
+(require 'smooth-scrolling)

@@ -7,7 +7,11 @@
 ;; wombat color theme
 (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
 (require 'color-theme-wombat)
-(color-theme-wombat)
+
+;; solarized
+(add-to-list 'load-path (concat vendor-dir "/color-theme-solarized"))
+(require 'color-theme-solarized)
+(color-theme-solarized-light)
 
 ;; use inconsolata
 (set-face-attribute 'default nil
