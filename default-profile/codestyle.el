@@ -8,7 +8,8 @@
 (add-to-list 'load-path (concat vendor-dir "/color-theme-wombat"))
 (require 'color-theme-wombat)
 
-(add-to-list 'load-path (concat vendor-dir "/emacs-color-theme-solarized"))
+;; solarized
+(add-to-list 'load-path (concat vendor-dir "/color-theme-solarized"))
 (require 'color-theme-solarized)
 (color-theme-solarized-light)
 

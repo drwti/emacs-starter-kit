@@ -15,3 +15,18 @@
 
 ;; ruby
 (setq ruby-deep-indent-paren-style nil)
+
+;; smooth-scrolling stops that annoying jump when moving around
+(require 'smooth-scrolling)
+
+;; dircolors colors buffers like ls --color
+(require 'dircolors)
+
+;; makes sexps flash when you eval them!
+(require 'highlight)
+(require 'eval-sexp-fu)
+
+;; make emacs like vim lisp mode :D
+(require 'rainbow-delimiters)
+(require 'rainbow-parens)
+
