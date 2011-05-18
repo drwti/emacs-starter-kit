@@ -26,3 +26,6 @@
 (require 'rainbow-delimiters)
 (require 'rainbow-parens)
 
+;; set ack to be ack-grep for debian
+(require 'full-ack)
+(setq ack-executable (executable-find  "ack-grep" ))
