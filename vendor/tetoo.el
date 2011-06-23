@@ -17,7 +17,7 @@
   (locate-dominating-file default-directory "project.clj"))
 
 (defmacro tetoo-in-project-root (body)
-  "Wrap BODY to make `default-directory' the db folder."
+  "Wrap BODY to make `default-directory' the project folder."
   (let ((dir (gensym)))
     `(let ((,dir (tetoo-project-root)))
        (if ,dir

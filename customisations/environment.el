@@ -6,8 +6,9 @@
 
 (if window-system (set-exec-path-from-shell-PATH))
 
+;; causes clojure-jack-in to shit the bed??
 ;; hook to redirect stdout to slime buffer
-(add-hook 'slime-connected-hook 'slime-redirect-inferior-output)
+;; (add-hook 'slime-connected-hook 'slime-redirect-inferior-output)
 
 ;; ruby
 (setq ruby-deep-indent-paren-style nil)
