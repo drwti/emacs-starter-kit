@@ -33,13 +33,3 @@
 
 ;; require tetoo stuff
 (require 'tetoo)
-
-;; add clojure stuff in repl
-(defun slime-clojure-repl-setup () 
-  (when (string-equal "clojure" (slime-connection-name)) 
-    (clojure-mode-font-lock-setup) 
-    (when (slime-inferior-process) 
-      (slime-redirect-inferior-output)) 
-    (clojure-mode)))
-
-(add-hook 'slime-repl-mode-hook 'slime-clojure-repl-setup) 
