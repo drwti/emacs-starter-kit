@@ -13,3 +13,5 @@
 (global-set-key "\C-c\C-k" 'kill-region)
 
 (global-set-key [f5] 'call-last-kbd-macro)
+
+(global-set-key [f9] 'magit-status)
