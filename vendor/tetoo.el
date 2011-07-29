@@ -29,7 +29,7 @@
 
 (defun tetoo-db-rebuild (environment)
   (let ((buffer (get-buffer-create tetoo-buffer-name)))
-    (tetoo-in-db-folder
+    (tetoo-in-project-root
      (shell-command (format "cd db && %s && ls && cd -" (tetoo-db-rebuild-command environment))
                     tetoo-buffer-name))))
 
