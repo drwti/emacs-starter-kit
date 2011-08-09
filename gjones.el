@@ -11,3 +11,6 @@
 (setq jabber-chat-buffer-show-avatar nil)
 (setq jabber-vcard-avatars-retrieve nil)
 (setq jabber-roster-line-format " %c %-25n %u %-8s (%r)")
+
+;; turn off stupid line highlighting 9_9
+(hl-line-mode nil)
