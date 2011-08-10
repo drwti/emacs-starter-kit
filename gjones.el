@@ -13,4 +13,4 @@
 (setq jabber-roster-line-format " %c %-25n %u %-8s (%r)")
 
 ;; turn off stupid line highlighting 9_9
-(hl-line-mode nil)
+(global-hl-line-mode nil)

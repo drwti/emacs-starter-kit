@@ -10,7 +10,7 @@
 ;; use inconsolata
 (set-face-attribute 'default nil
                     :family "Inconsolata"
-                    :height 130)
+                    :height 140)
 
 ;; show line numbers
 (global-linum-mode t)
